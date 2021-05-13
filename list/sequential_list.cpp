@@ -3,6 +3,7 @@
 * author: Albert Nie
 * date: 2021.5.11
 * update : 2021.5.11
+* language : c++
 */
 
 #include <iostream>
@@ -36,7 +37,7 @@ public:
 template<class elemType>
 List<elemType>::List(){
 	for (int i = 0; i < MAX_SIZE; i++)     // 内置类型必须初始化，否则值是未定义的
-		this->data[i] = (elemType)0;       // 强制类型转换,个人觉得这里处理得不好,有待完善
+		this->data[i] = (elemType)0;   // 强制类型转换,个人觉得这里处理得不好,有待完善
 	this->_len = 0;
 }
 
